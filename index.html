@@ -26,7 +26,7 @@
             Instascan.Camera.getCameras().then(function(cameras){
                 debugger;
                 if(cameras.length >0){
-                    scanner.start(cameras[0]);
+                    scanner.start(cameras[1]);
                 }else{
                     console.log("No se encontró camaras")
                     alert("Camaras no encontrada")
@@ -37,7 +37,7 @@
             })
 
             scanner.addListener('scan',function(respuesta){
-                console.log("CONTENIDO: "+respuesta)
+                alert("CONTENIDO: "+respuesta)
             })
 
         </script>
